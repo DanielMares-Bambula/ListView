@@ -25,7 +25,7 @@ namespace Listview
         {
             InitializeComponent();
             Person.InitPersons();
-            PersonsV.DataContext = Person.AllPersons;
+            PersonsV.DataContext = Person.AllPeople;
         }
 
         private void Persons_SelectionChanged(object sender, SelectionChangedEventArgs e)

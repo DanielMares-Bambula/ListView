@@ -22,18 +22,18 @@ namespace Listview
             get => birthNumber;
             set { birthNumber = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("BirthNumber")); }
         }
-        public static Dictionary<string, Person> AllPersons = new Dictionary<string, Person>();
+        public static Dictionary<string, Person> AllPeople = new Dictionary<string, Person>();
         public static void InitPersons()
         {
-            AllPersons["Tonda Houška"] = new Person
+            AllPeople["Tonda Houška"] = new Person
             {
-                DateOfBirth = "2002",
+                DateOfBirth = "13.June 2002",
                 BirthNumber = 25263732,
 
             };
-            AllPersons["Lucie Houšková"] = new Person
+            AllPeople["Lucie Houšková"] = new Person
             {
-                DateOfBirth = "2005",
+                DateOfBirth = "20. April 2005",
                 BirthNumber = 25263732,
 
             };

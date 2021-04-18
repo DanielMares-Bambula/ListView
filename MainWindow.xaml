@@ -35,12 +35,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackPanel Grid.Row="0" Grid.Column="1">
-            <Label Content="Name:"/>
-            <Label Content="{Binding Name}"/>
-        </StackPanel>
-        <Label Content="{Binding DateOfBirth}" Grid.Column="1" Grid.Row="1"/>
-        <Label Content="{Binding BirthNumber}" Grid.Column="1" Grid.Row="2"/>
+           
+        <Label Content="{Binding DateOfBirth}" Grid.Column="0" Grid.Row="1"/>
+        <Label Content="{Binding BirthNumber}" Grid.Column="0" Grid.Row="2"/>
        
     </Grid>
 </Window>
