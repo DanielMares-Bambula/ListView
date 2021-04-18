@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
-namespace ListView
+namespace Listview
 {
     /// <summary>
     /// Interakční logika pro MainWindow.xaml
@@ -23,6 +24,14 @@ namespace ListView
         public MainWindow()
         {
             InitializeComponent();
+            Person.InitPersons();
+            PersonsV.DataContext = Person.AllPersons;
+        }
+
+        private void Persons_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Person u = ((KeyValuePair<string, Person>)(sender as ListView).SelectedItem).Value;
+            DataContext = u;
         }
     }
 }
